@@ -1,0 +1,425 @@
+/* Daily-use surfaces share the existing Taildesk palette and 44px touch targets. */
+.secret-input {
+  position: relative;
+}
+.secret-input input {
+  padding-right: 52px;
+  min-height: 48px;
+}
+.secret-input .icon-button {
+  position: absolute;
+  right: 3px;
+  top: 2px;
+  width: 44px;
+  height: 44px;
+  color: #626c82;
+}
+.field-hint {
+  font-size: 12px;
+  color: #667187;
+  margin: 10px 0 0;
+}
+.login-card > p,
+.login-card details,
+.login-story > p {
+  color: #68758b;
+}
+.login-card summary {
+  min-height: 44px;
+  padding-block: 10px;
+}
+.login-card details {
+  padding-top: 8px;
+}
+.login-card form > .primary {
+  min-height: 48px;
+}
+.connection-reminder {
+  width: 100%;
+  min-height: 48px;
+  padding: 10px 14px;
+  margin-bottom: 22px;
+  gap: 10px;
+  border: 1px solid #e0e5f3;
+  border-radius: 12px;
+  background: #eef1fb;
+  color: #556484;
+  text-align: left;
+  white-space: normal;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.connection-reminder > svg {
+  flex: none;
+}
+.connection-reminder > span {
+  flex: 1;
+}
+.connection-reminder:hover {
+  background: #e5eafa;
+}
+.card-actions {
+  gap: 8px;
+}
+.card-actions .icon-button {
+  width: 44px;
+  height: 44px;
+  background: #f3f5f9;
+  color: #657089;
+}
+.card-actions .connect-button {
+  min-height: 44px;
+  padding: 10px 16px;
+  border-radius: 9px;
+  background: var(--accent);
+  color: white;
+  flex: 1;
+  justify-content: space-between;
+  font-size: 13px;
+}
+.card-actions .connect-button:hover {
+  background: #4554ca;
+}
+.device-status {
+  font-size: 11px;
+  color: #68758b;
+}
+.device-status.reachable {
+  color: #357458;
+}
+.platform-name,
+.device-address {
+  color: #68758b;
+  font-size: 12px;
+}
+.device-address code {
+  color: #546179;
+}
+.device-management {
+  display: grid;
+  gap: 8px;
+  margin: 16px 0 8px;
+}
+.device-management > button {
+  min-height: 68px;
+  gap: 14px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  justify-content: flex-start;
+  text-align: left;
+}
+.device-management > button:hover {
+  background: #f5f6fa;
+}
+.device-management > button > span {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 600;
+}
+.device-management small {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #727d91;
+  white-space: normal;
+}
+.device-management .remove-device-action {
+  color: #b74646;
+}
+.app-shell .topbar-right > .logout-button {
+  display: flex;
+  width: 44px;
+  height: 44px;
+}
+.search-box {
+  height: 44px;
+}
+.search-box input {
+  font-size: 14px;
+}
+.search-box:focus-within {
+  outline: 2px solid #7885ed;
+  outline-offset: 2px;
+}
+.search-box .icon-button {
+  width: 32px;
+  height: 40px;
+}
+
+.controls-launcher {
+  position: absolute;
+  right: 16px;
+  bottom: max(18px, env(safe-area-inset-bottom));
+  z-index: 3;
+  min-height: 48px;
+  padding: 0 16px;
+  gap: 8px;
+  border-radius: 24px;
+  border: 1px solid #60728e;
+  background: #27354bf2;
+  box-shadow: 0 4px 20px #0004;
+  color: #f1f5ff;
+  font-size: 13px;
+}
+.controls-launcher:active {
+  background: #435a80;
+}
+.interaction-mode-notice {
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  margin-inline: auto;
+  width: fit-content;
+  max-width: calc(100% - 20px);
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 4px 0 12px;
+  border: 1px solid #657da2;
+  border-radius: 12px;
+  background: #24344af5;
+  box-shadow: 0 2px 12px #0003;
+  font-size: 12px;
+  color: #dce7fa;
+}
+.interaction-mode-notice > span {
+  line-height: 1.4;
+}
+.interaction-mode-notice > button {
+  min-height: 44px;
+  padding: 8px;
+  color: #c3d5ff;
+  font-weight: 650;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.input-panel-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #202b3e;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 840px;
+  margin: 0 auto 8px;
+  width: 100%;
+}
+.input-mode-switch {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  min-width: 0;
+  padding: 3px;
+  background: #131e30;
+  border: 1px solid #465772;
+  border-radius: 11px;
+}
+.input-mode-switch > button {
+  min-height: 44px;
+  padding: 7px 14px;
+  color: #abbcd5;
+  border-radius: 8px;
+  font-size: 12px;
+}
+.input-mode-switch > button[aria-pressed='true'] {
+  background: #41587e;
+  color: #fff;
+  box-shadow: 0 1px 4px #0003;
+}
+.input-panel-header > .icon-button,
+.remote-page .text-panel > .input-panel-header > .icon-button {
+  width: 44px;
+  height: 44px;
+  color: #d4e1f6;
+  margin-left: auto;
+}
+.input-panel-header > .icon-button:hover {
+  background: #344761;
+}
+.remote-page .text-panel {
+  background: #202b3e;
+  color: #e6edff;
+  padding: 8px 12px max(10px, env(safe-area-inset-bottom));
+  border-top: 1px solid #4e617f;
+}
+.remote-page .text-panel textarea {
+  color: #edf3ff;
+  background: #142135;
+  border-color: #576b89;
+  border-radius: 10px;
+  padding: 10px 12px;
+  min-height: 60px;
+}
+.remote-page .text-panel textarea::placeholder {
+  color: #a4b5cd;
+}
+.remote-page .text-panel-actions > span,
+.remote-page.is-landscape .text-panel-actions.has-feedback > span {
+  color: #b5c4db;
+}
+.text-panel-actions .secondary {
+  background: #2f405b;
+  color: #e5edff;
+  border-color: #566b8d;
+}
+.remote-page .text-panel-actions button {
+  min-height: 44px;
+}
+.remote-page.is-landscape .text-panel textarea {
+  height: 96px;
+}
+.remote-page.is-landscape .text-panel-actions button {
+  min-height: 44px;
+}
+.remote-page.is-landscape .text-panel .input-panel-header {
+  margin-bottom: 0;
+}
+.remote-page .remote-controls:not(.is-game-controls) {
+  border-radius: 16px 16px 0 0;
+  padding: 8px 14px max(12px, env(safe-area-inset-bottom));
+}
+.remote-controls button:active,
+.typing-row button:active,
+.keyboard-grid button:active {
+  background: #506b95;
+  color: #fff;
+}
+.remote-page .remote-header-actions button[aria-pressed='true'] {
+  box-shadow: inset 0 -2px 0 #a5c2f8;
+}
+
+/* Input sheets float independently: docking changes only the bottom key strip. */
+.remote-page > :is(.typing-keyboard, .keyboard-panel, .text-panel) {
+  position: absolute;
+  z-index: 4;
+  bottom: 0;
+  left: env(safe-area-inset-left);
+  right: env(safe-area-inset-right);
+  box-shadow: 0 -4px 20px #0004;
+}
+.remote-page.is-rotated > :is(.typing-keyboard, .keyboard-panel, .text-panel) {
+  left: env(safe-area-inset-top);
+  right: env(safe-area-inset-bottom);
+}
+.remote-page .typing-keyboard {
+  max-height: calc(100% - 56px);
+}
+@media (max-height: 360px), (max-width: 360px) {
+  .remote-page.is-landscape .typing-row button {
+    min-height: 36px;
+  }
+}
+
+@media (max-width: 760px) {
+  .dashboard {
+    padding: 22px 18px 12px;
+  }
+  .topbar {
+    padding-inline: 18px;
+  }
+  .page-heading {
+    margin-bottom: 18px;
+  }
+  .page-heading p {
+    font-size: 12px;
+    margin-bottom: 0;
+    color: #68758b;
+  }
+  .page-heading .primary {
+    min-height: 44px;
+    font-size: 12px;
+  }
+  .page-heading .eyebrow {
+    color: #64718b;
+    letter-spacing: 1.2px;
+  }
+  .connection-reminder {
+    margin-bottom: 18px;
+  }
+  .list-toolbar {
+    margin-bottom: 14px;
+  }
+  .search-box {
+    width: min(195px, 60%);
+  }
+  .search-box input {
+    font-size: 16px;
+  }
+  .device-card {
+    padding: 16px;
+  }
+  .card-top {
+    margin-bottom: 10px;
+  }
+  .device-icon {
+    width: 42px;
+    height: 42px;
+  }
+  .device-address {
+    margin: 12px 0;
+    padding: 8px 10px;
+  }
+  .device-card h3 {
+    font-size: 16px;
+  }
+  .platform-name {
+    font-size: 11px;
+  }
+  .connection-hint p {
+    font-size: 12px;
+  }
+  .login-layout {
+    margin-top: 8px;
+    gap: 20px;
+  }
+  .login-story .eyebrow {
+    display: none;
+  }
+  .login-story h1 {
+    font-size: 30px;
+  }
+  .login-story > p {
+    font-size: 13px;
+  }
+  .login-card {
+    padding: 24px;
+  }
+  .login-card > p {
+    font-size: 13px;
+    margin-bottom: 18px;
+  }
+  .login-card details {
+    font-size: 12px;
+    margin-top: 18px;
+  }
+}
+@media (max-width: 430px) {
+  .input-mode-switch {
+    flex: 1;
+  }
+  .input-mode-switch > button {
+    flex: 1;
+    padding-inline: 8px;
+    font-size: 12px;
+  }
+  .input-panel-header {
+    gap: 4px;
+  }
+  .remote-page:not(.is-rotated) .remote-name {
+    display: flex;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  button {
+    transition: none;
+  }
+  .spin {
+    animation-duration: 2.5s;
+  }
+}

@@ -1,0 +1,7 @@
+fastapi==0.115.12
+uvicorn==0.34.3
+websockets==15.0.1
+websockify==0.13.0
+python-dotenv==1.1.0
+pytest==8.4.0
+httpx==0.28.1

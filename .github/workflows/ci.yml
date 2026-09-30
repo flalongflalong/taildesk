@@ -1,0 +1,34 @@
+name: Check source
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Check public source
+        run: python scripts/release.py
+      - name: Install and build
+        run: bash scripts/setup.sh
+      - run: npm run test:controls
+      - run: npm test
+      - run: npm run format:check
+      - name: Verify source export
+        run: npm run release:source
